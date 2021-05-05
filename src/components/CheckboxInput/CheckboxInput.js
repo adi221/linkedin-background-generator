@@ -19,12 +19,12 @@ const CheckboxInput = () => {
       <div className='checkbox__container'>
         <input
           type='checkbox'
-          id='checkbox'
+          id='coloredIcons'
           className='checkbox__input'
           checked={showColoredIcons}
           onChange={changeHandler}
         />
-        <label htmlFor='checkbox'>Colored Icons</label>
+        <label htmlFor='coloredIcons'>Colored Icons</label>
       </div>
     </div>
   );
