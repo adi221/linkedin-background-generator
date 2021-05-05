@@ -1,0 +1,35 @@
+@import '../../index.scss';
+
+.download {
+  width: 80%;
+  display: flex;
+  margin: 2rem auto 2.2rem;
+
+  button {
+    background-color: $primary-clr;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+  svg {
+    margin-left: 5px;
+  }
+
+  &__button {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+
+  &__type {
+    border-radius: 0 10px 10px 0;
+    margin-left: 2px;
+    display: flex;
+
+    svg {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../index.scss';
+
+.color-picker {
+  position: relative;
+  margin: 10px;
+  width: 250px;
+
+  &__control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 150px;
+    height: 40px;
+    padding: 2.5px 0;
+
+    &-btn {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      border-radius: 10px 0 0 10px;
+      border: 1px solid #686868;
+    }
+
+    input {
+      border-radius: 0 10px 10px 0;
+      border-left: 0;
+      padding-left: 8px;
+      width: calc(100% - 30px);
+      border: 1px solid #b3b3b3;
+    }
+  }
+  &__container {
+    position: absolute;
+    top: 52px;
+  }
+}

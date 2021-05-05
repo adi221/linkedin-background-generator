@@ -1,0 +1,21 @@
+@import '../../index.scss';
+
+.searchbar {
+  width: 250px;
+  margin: 10px;
+
+  &__input {
+    height: 34px;
+    width: 100%;
+    border: 1px solid #686868;
+    padding: 10px;
+    border-radius: 10px;
+    color: #22273a;
+    outline: none;
+
+    &::placeholder {
+      color: #22273a;
+      text-transform: capitalize;
+    }
+  }
+}

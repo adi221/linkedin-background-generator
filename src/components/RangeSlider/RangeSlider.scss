@@ -1,0 +1,54 @@
+@import '../../index.scss';
+
+.range-slider {
+  margin: 10px;
+  display: inline-block;
+  width: 250px;
+
+  &__container {
+    background-color: #22273a;
+    height: 30px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    input[type='range'] {
+      -webkit-appearance: none;
+      border-radius: 5px;
+      background: #ffffff50;
+      outline: none;
+      cursor: pointer;
+      height: 2px;
+      width: 200px;
+
+      &:active::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+        &:hover {
+          background: rgb(212, 212, 212);
+          transform: scale(1.2);
+        }
+      }
+      &:active::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border: 0;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+        &:hover {
+          background: rgb(212, 212, 212);
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

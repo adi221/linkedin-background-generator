@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.message {
+  min-width: 100px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+
+.danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+.info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+}

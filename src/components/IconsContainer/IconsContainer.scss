@@ -1,0 +1,21 @@
+@import '../../index.scss';
+
+.icons-container {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  padding: 1.5rem 1rem;
+  background-color: $initial-bg-clr;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .icons-container {
+    padding-bottom: 60px;
+  }
+}

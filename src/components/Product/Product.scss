@@ -1,0 +1,147 @@
+@import '../../index.scss';
+
+.product {
+  width: 80%;
+  position: relative;
+  background: url(./images/grid.png);
+  margin-top: 1rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+
+  &__banner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    max-width: 490px;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    z-index: 20;
+
+    h3 {
+      color: #fff;
+    }
+  }
+
+  &__delete {
+    position: absolute;
+    top: -2rem;
+    left: 46%;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+//trashcan
+
+.trash-box {
+  width: 55px;
+  height: 50px;
+  position: relative;
+
+  //trash-lid
+  .trash-top {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    width: 80%;
+    height: 15%;
+    background: $trash-clr;
+    border-radius: 5px;
+    transform-origin: left bottom;
+    transition: all 0.2s ease-in-out;
+
+    //the top of lid
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 95%;
+      left: 50%;
+      transform: translate(-50%);
+      width: 30%;
+      height: 80%;
+      background: inherit;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+
+  //trash-can-bottom
+  .trash-btm {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 70%;
+    height: 65%;
+    background: $trash-clr;
+    border-radius: 5px;
+    transform-origin: left 70%; //transform left-side and 70% from top
+    transition: all 0.2s ease-in-out;
+
+    //lines in the middle
+    .trash-lines {
+      //centering
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      //
+      width: 60%;
+      height: 80%;
+      display: flex;
+      justify-content: space-around; //or space-between
+
+      .trash-line {
+        width: 20%;
+        height: 100%;
+        background: darken($trash-clr, 10%); //make color 10% darker
+        border-radius: 3px;
+      }
+    }
+  }
+  //trash in(behind) the can
+
+  .trash {
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    transform: translate(-38%, -80%) rotate(35deg);
+    width: 40%;
+    height: 40%;
+    background: $trash-white-clr;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+
+    //second trash
+    &::before {
+      content: '';
+      position: absolute;
+      transform: translate(30%, -20%) rotate(25deg);
+      width: 100%;
+      height: 100%;
+      background: darken($trash-white-clr, 10%);
+      border-radius: 2px;
+    }
+  }
+}
+
+//Hover
+.hovered .trash-top {
+  //open the lid
+  transform: translate(-50%, -15%) rotate(-20deg);
+}
+
+.hovered .trash-btm {
+  //rotate the bottom a little
+  transform: translate(-50%, -100%) rotate(5deg);
+}
+
+.hovered .trash {
+  top: 50%;
+  transform: translate(-42%, -50%) rotate(35deg); //comes from bottom
+}

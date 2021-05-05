@@ -1,0 +1,148 @@
+@import '../index.scss';
+
+.app {
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  &__left {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    position: relative;
+
+    &-container {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      &-settings {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(261px, 1fr));
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 80%;
+        gap: 10px;
+      }
+    }
+
+    h1 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 20px;
+      text-align: center;
+      white-space: nowrap;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 150px;
+        height: 4px;
+        content: '';
+        left: 50%;
+        margin-left: -80px;
+        background-color: #dfdfdf;
+      }
+
+      svg {
+        vertical-align: middle;
+        fill: #0072b1;
+      }
+    }
+
+    a {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 8px;
+      color: $primary-clr;
+      text-decoration: none;
+      font-weight: 600;
+
+      svg {
+        padding-top: 0.2rem;
+      }
+    }
+  }
+
+  &__right {
+    width: 50vw;
+  }
+
+  &__show-btn {
+    position: fixed;
+    bottom: 10%;
+    right: 20px;
+    background-color: #fff;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 2px solid $primary-clr;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 1rem;
+    color: $primary-clr;
+    transition: all 0.3s linear;
+    border: 1px solid transparent;
+
+    svg {
+      font-size: 22px;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: $primary-clr;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .app {
+    flex-direction: column;
+    min-height: initial;
+    &__right,
+    &__left {
+      width: 100vw;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    &__show-btn {
+      left: 20px;
+      bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 1335px) {
+  .app {
+    &__left {
+      width: 100vw;
+    }
+  }
+}
+
+@media (max-width: 665px) {
+  .app {
+    h1 {
+      display: none;
+    }
+  }
+}

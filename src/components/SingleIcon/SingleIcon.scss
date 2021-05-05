@@ -1,0 +1,60 @@
+@import '../../index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.single-icon {
+  margin: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+
+  i {
+    font-weight: 400;
+    font-size: 60px;
+    transition: all 0.3s ease-in-out;
+    filter: brightness(0.85) contrast(200%);
+    cursor: pointer;
+  }
+
+  &:hover > i,
+  &:focus > i,
+  &:active > i,
+  i:hover {
+    transform: translateY(-6px);
+  }
+
+  p {
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    max-width: 100px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  p::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: -5px;
+    height: 1px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: white;
+  }
+
+  p:hover::before,
+  p:focus::before,
+  p:active::before,
+  &:hover > p::before,
+  &:focus > p::before,
+  &:active > p::before {
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
