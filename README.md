@@ -1,4 +1,4 @@
-# LinkedIn Background Generator Li
+# LinkedIn Background Generator
 
 Tool for creating LinkedIn background banner from [Devicon](https://github.com/devicons/devicon) icons.
 
@@ -24,7 +24,7 @@ Tool for creating LinkedIn background banner from [Devicon](https://github.com/d
 ## ❤️ Contribution
 
 If you have any suggestions on what to improve in <em>LinkedIn Background Generator</em> and would like to share them, feel free to leave an issue or fork project to implement your own ideas :)
-I initially thought about supporting file upload (.svg), so I have a version with little bit Node.js for uploading, including uploading component, actions and reducers, you can [check here](https://github.com/adi221/linkedin-bg).
+I initially thought about supporting file upload (.png / .jpeg), so I have a version with little bit Node.js for uploading, including uploading component, actions and reducers, you can [check here](https://github.com/adi221/linkedin-bg).
 
 ## ⭐ Inspiration
 
