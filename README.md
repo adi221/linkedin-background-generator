@@ -2,7 +2,7 @@
 
 Tool for creating LinkedIn background banner from [Devicon](https://github.com/devicons/devicon) icons.
 
-<img width="80%" align="center" src="./images/animation.gif" alt="git preview" />
+![gif preview](https://user-images.githubusercontent.com/34806925/117176801-f337e580-add8-11eb-862a-c0913be0021e.gif)
 
 ## Features
 
