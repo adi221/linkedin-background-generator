@@ -15,7 +15,6 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function App() {
   const downloadRef = useRef();
-
   const { size, space } = useSelector(state => state.productSettings);
 
   return (
@@ -36,7 +35,7 @@ function App() {
           <Download downloadRef={downloadRef} />
         </div>
         <a
-          href='https://github.com/adi221/linkedin-bg-generate'
+          href='https://github.com/adi221/linkedin-background-generator'
           target='_blank'
           rel='noopener noreferrer'
         >
