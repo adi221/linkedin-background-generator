@@ -1,4 +1,4 @@
-# LinkedIn Background Generator
+# [LinkedIn Background Generator](https://linkedinbggenerator.com/)
 
 Create amazing LinkedIn banner based on your favorite tech stack of coding languages and frameworks ❤
 
